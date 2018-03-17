@@ -1,0 +1,12 @@
+{
+  "name": "getting-started",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": "https://github.com/zhuzhiou/learning-vue",
+  "author": "zhuzhiou",
+  "license": "Unlicense",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
