@@ -7,10 +7,10 @@
   "license": "Unlicense",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --colors --mode development --config config/webpack.config.js"
+    "dev": "webpack-dev-server --inline --progress --colors --mode development --config webpack.config.js",
+    "build": "webpack --mode production --config webpack.config.js"
   },
   "dependencies": {
-    "bootstrap": "3.3.7"
   },
   "devDependencies": {
     "css-loader": "^0.28.11",

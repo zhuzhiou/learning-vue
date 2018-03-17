@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
     entry: './src/main.js',
     output: {
-        path: path.resolve(__dirname, '../dist'),
+        path: path.resolve(__dirname, './dist'),
         filename: 'build.js'
     },
     module: {
@@ -22,7 +22,7 @@ module.exports = {
     ],
     resolve: {
         alias: {
-            '~': path.resolve(__dirname, '../src')
+            '~': path.resolve(__dirname, './src')
         }
     }
 };
