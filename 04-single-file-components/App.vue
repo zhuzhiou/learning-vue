@@ -1,17 +1,17 @@
 <template>
     <div id="app">
         <h1>App</h1>
-        <Paragraph />
+        <HelloWorld />
     </div>
 </template>
 
 <script>
-import Paragraph from './components/Paragraph.vue'
+import HelloWorld from './HelloWorld'
 
 export default {
     name: 'App',
     components: {
-        Paragraph
+        HelloWorld
     }
 }
 </script>
