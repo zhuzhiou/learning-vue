@@ -1,25 +1,10 @@
 import Vue from 'vue';
-import VueRouter from 'vue-router';
-
-import Homepage from './Homepage';
-import About from './About';
-
-Vue.use(VueRouter);
-
-const routes = [
-    {
-        path: '/Homepage', component: Homepage
-    },
-    {
-        path: '/About', component: About
-    }
-];
-
-const router = new VueRouter({
-    routes
-});
+import App from './App';
+import router from './router';
 
 new Vue({
     el: '#app',
+    template: '<App />',
+    components: { App },
     router
 });

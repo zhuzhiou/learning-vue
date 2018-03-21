@@ -1,16 +1,16 @@
 <template>
-  <p>主页</p>
+  <p>网页1</p>
 </template>
 
 <script>
 export default {
-  name: 'Homepage'
+  name: 'Default'
 }
 </script>
 
 <style>
     p {
-        color: #f00;
+        color: #00f;
     }
 </style>
 
