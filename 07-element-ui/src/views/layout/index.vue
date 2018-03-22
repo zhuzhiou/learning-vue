@@ -1,9 +1,14 @@
 <template>
     <el-container>
-        <el-header>Header</el-header>
+        <el-header>
+            <el-menu mode="horizontal" default-active="2">
+                <el-menu-item index="1">菜单一</el-menu-item>
+                <el-menu-item index="2">菜单二</el-menu-item>
+            </el-menu>
+        </el-header>
         <el-container>
             <el-aside width="200px">
-                <el-menu default-active="1-1" default-openeds="1">
+                <el-menu default-active="1-1">
                     <el-submenu index="1">
                         <template slot="title">
                             <i class="el-icon-setting"></i>
@@ -45,7 +50,4 @@ export default {
 </script>
 
 <style scoped>
-.el-header {
-    background-color: #20a0ff;
-}
 </style>
