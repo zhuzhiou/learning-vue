@@ -14,26 +14,14 @@ export default new Router({
       children: [
         {
           path: 'dashboard',
-          component: () => import('@/views/module1/index')
-        }
-      ]
-    },
-    {
-      path: '/module1',
-      component: layout,
-      children: [
+          component: () => import('@/views/dashboard/index')
+        },
         {
-          path: 'index',
+          path: '/module1',
           component: () => import('@/views/module1/index')
-        }
-      ]
-    },
-    {
-      path: '/module2',
-      component: layout,
-      children: [
+        },
         {
-          path: 'index',
+          path: '/module2',
           component: () => import('@/views/module2/index')
         }
       ]
