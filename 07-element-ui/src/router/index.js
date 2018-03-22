@@ -11,11 +11,30 @@ export default new Router({
       path: '/',
       component: layout,
       redirect: '/dashboard',
-      name: 'Dashboard',
       children: [
         {
           path: 'dashboard',
-          component: () => import('@/views/dashboard/index')
+          component: () => import('@/views/module1/index')
+        }
+      ]
+    },
+    {
+      path: '/module1',
+      component: layout,
+      children: [
+        {
+          path: 'index',
+          component: () => import('@/views/module1/index')
+        }
+      ]
+    },
+    {
+      path: '/module2',
+      component: layout,
+      children: [
+        {
+          path: 'index',
+          component: () => import('@/views/module2/index')
         }
       ]
     }
