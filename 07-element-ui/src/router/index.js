@@ -9,20 +9,24 @@ export default new Router({
   routes: [
     {
       path: '/',
+      redirect: '/examples'
+    },
+    {
+      path: '/examples',
       component: layout,
-      redirect: '/dashboard',
+      redirect: '/examples/form',
       children: [
         {
+          path: 'table',
+          component: () => import('@/views/examples/table')
+        },
+        {
+          path: 'form',
+          component: () => import('@/views/examples/form')
+        },
+        {
           path: 'dashboard',
-          component: () => import('@/views/dashboard/index')
-        },
-        {
-          path: '/module1',
-          component: () => import('@/views/module1/index')
-        },
-        {
-          path: '/module2',
-          component: () => import('@/views/module2/index')
+          component: () => import('@/views/examples/dashboard')
         }
       ]
     }
