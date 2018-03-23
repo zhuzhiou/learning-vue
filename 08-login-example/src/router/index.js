@@ -7,11 +7,15 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/login'
+      redirect: '/index'
     },
     {
       path: '/login',
       component: () => import('@/views/Login')
+    },
+    {
+      path: '/index',
+      component: () => import('@/views/Index')
     }
   ]
 })
