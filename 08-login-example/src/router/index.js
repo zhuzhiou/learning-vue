@@ -1,21 +1,30 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+import layout from '@/views/layout/index'
+
 Vue.use(Router)
 
 const router = new Router({
   routes: [
     {
       path: '/',
-      redirect: '/index'
+      redirect: '/admin'
     },
     {
       path: '/login',
-      component: () => import('@/views/Login')
+      component: () => import('@/views/login/index')
     },
     {
-      path: '/index',
-      component: () => import('@/views/Index')
+      path: '/admin',
+      redirect: '/admin/welcome',
+      component: layout,
+      children: [
+        {
+          path: 'welcome',
+          component: () => import('@/views/welcome/index')
+        }
+      ]
     }
   ]
 })
